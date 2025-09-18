@@ -10,6 +10,15 @@ console.log(Number.isInteger(num1));
 let temp = num1 * "Ola"
 console.log(Number.isNaN(temp));//NaN
 
+console.log("------------");
+
+let num3 = 0.7
+let num4 = 0.1
+
+console.log(num3 + num4);//0.7999999999999999  Padrão: IEEE 754-2008
+
+
+
 
 
 
