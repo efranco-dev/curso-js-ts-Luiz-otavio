@@ -1,0 +1,13 @@
+//escopo lexico - a função conhece onde foi declarada a variavel
+const nome = 'Luiz';
+
+function falaNome() {
+  console.log(nome);
+}
+function usaFalaNome() {
+  const nome = 'Otavio';
+  falaNome();
+}
+
+usaFalaNome();
+
