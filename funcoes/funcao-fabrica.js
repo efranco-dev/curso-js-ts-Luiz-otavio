@@ -4,16 +4,17 @@ function criaPessoa(nome, sobrenome, altura, peso) {
     sobrenome,
 
     get nomeCompleto() {
-      return `${nome} ${sobrenome}`;
+      return `${this.nome} ${this.sobrenome}`;
     },
     set nomeCompleto(valor) {
       valor = valor.split(' ');
-      this.nome = valor.shift();
+      this.nome = valor.shift();//elimina indice 0
+      this.sobrenome = valor.join(' ')
       console.log(valor);
     },
 
-    fala: function (assunto) {
-      return `${this.nome} está ${this.assunto}`;
+    fala(assunto) {
+      return `${nome} está ${assunto}`;
     },
     altura: altura,
     peso: peso,
