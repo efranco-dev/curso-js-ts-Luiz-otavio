@@ -21,11 +21,11 @@ pessoa1.falaNome = function () {
 console.log(pessoa1.falaNome());
 //delete pessoa1.nome
 
-pessoa1.getDatanascimento = function () {
+pessoa1.getDataNascimento = function () {
   const dataAtual = new Date();
   return dataAtual.getFullYear() - this.idade;
 };
-console.log(pessoa1.getDatanascimento());
+console.log(pessoa1.getDataNascimento());
 
 for (let chave in pessoa1) {
   console.log(pessoa1[chave]);
