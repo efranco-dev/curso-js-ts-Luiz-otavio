@@ -23,3 +23,6 @@ contador -= 1; // Mesmo que contador = contador - 1
 contador *= 2; // Mesmo que contador = contador * 2
 contador /= 2; // Mesmo que contador = contador / 2
 contador %= 2; // Mesmo que contador = contador % 2
+
+//NaN = Not a Number
+console.log( 10 / "texto" ); // Retorna NaN
